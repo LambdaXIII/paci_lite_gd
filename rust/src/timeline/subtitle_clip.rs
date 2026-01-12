@@ -6,11 +6,11 @@ use godot::prelude::*;
 #[derive(GodotClass)]
 #[class(init,base=Resource)]
 pub struct SubtitleClip {
-    #[export]
+    #[var]
     content: GString,
 
-    #[export]
-    speaker: Option<Gd<Speaker>>,
+    #[var]
+    speaker_id: StringName,
 
     start_time: Time,
     duration: Time,

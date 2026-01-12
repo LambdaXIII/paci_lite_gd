@@ -5,16 +5,22 @@ use godot::prelude::*;
 #[class(init,base=Resource)]
 pub struct Speaker {
     #[export]
-    name: GString,
+    pub name: GString,
 
     #[export]
-    color: Color,
+    pub description: GString,
 
     #[export]
-    shortcut: GString,
+    pub color: Color,
 
-    #[export]
-    description: GString,
+    #[var]
+    pub speaker_id: StringName,
 
     base: Base<Resource>,
 }
+
+// #[godot_api]
+// impl Speaker {
+//     #[signal]
+//     fn info_changed();
+// }
