@@ -5,7 +5,7 @@ class_name SpeakerInfo
 var speaker_id:StringName
 
 @export
-var name:String
+var speaker_name:String
 
 @export_multiline
 var desc:String

@@ -1,3 +1,23 @@
-[gd_scene format=3 uid="uid://hrruoepbn33u"]
+[gd_scene load_steps=3 format=3 uid="uid://hrruoepbn33u"]
 
-[node name="Main" type="Node2D"]
+[ext_resource type="PackedScene" uid="uid://culjns1m1xapk" path="res://main_menubar.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://dihmvh86sr8xb" path="res://project/project_workspace.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Panel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainToolbar" parent="." instance=ExtResource("1_ig7tw")]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="ProjectWorkspace" parent="." instance=ExtResource("2_0xm2m")]
+layout_mode = 1
+anchors_preset = -1
+offset_top = 32.0

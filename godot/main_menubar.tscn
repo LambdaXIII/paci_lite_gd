@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://culjns1m1xapk"]
+
+[node name="MainMenuBar" type="MenuBar"]
+
+[node name="FileMenu" type="PopupMenu" parent="."]
+title = "文件"
+item_count = 6
+item_0/text = "打开"
+item_0/id = 0
+item_1/text = "导入"
+item_1/id = 3
+item_2/id = 1
+item_2/separator = true
+item_3/text = "保存"
+item_3/id = 4
+item_4/text = "另存为"
+item_4/id = 5
+item_5/text = "退出"
+item_5/id = 2
+
+[node name="EditMenu" type="PopupMenu" parent="."]
+title = "编辑"
+item_count = 1
+item_0/text = "添加轨道"
+item_0/id = 0
+
+[node name="ToolsMenu" type="PopupMenu" parent="."]
+title = "工具"
+
+[node name="HelpMenu" type="PopupMenu" parent="."]
+title = "帮助"
+system_menu_id = 4
